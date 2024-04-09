@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body{
+    background-color: rgb(189, 191, 191);
+    backgroundImage: "url('/photos/bgimg3.png')";
+
+}
+.swiper-button-next:after,
+.swiper-button-prev:after{
+    color:rgb(189, 191, 191);
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background: rgb(189, 191, 191)!important
+}

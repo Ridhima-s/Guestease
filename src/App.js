@@ -5,21 +5,52 @@ import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import ForgotPassword from "./pages/ForgotPassword";
 import Header from "./components/Header";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import PrivateRoute from "./components/PrivateRoute";
+import CreateListing from "./pages/CreateListing";
+
+import EditListing from "./pages/EditListing";
+import Listing from "./components/ListingItem";
 
 function App() {
   return (
     <>
     <Router>
       <Header/>
-
       <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/Profile" element={<Profile />} />
-      <Route path="/Sign-in" element={<Signin />} />
-      <Route path="/Sign-up" element={<Signup />} />
-      <Route path="/Forgot-Password" element={<ForgotPassword />} />
+      <Route path="/profile" element={<PrivateRoute/>}>
+      <Route path="/profile" element={<Profile />} />
+      </Route>
+      <Route path="/sign-in" element={<Signin />} />
+      <Route path="/sign-up" element={<Signup />} />
+      <Route path="/forgot-Password" element={<ForgotPassword />} />
+      <Route
+            path="/category/:categoryName/:listingId"
+            element={<Listing />}
+          />
+      <Route path="create-listing" element={<PrivateRoute/>}>
+         <Route path="/create-listing" element={<CreateListing />} />
+        </Route>
+        <Route path="edit-listing" element={<PrivateRoute/>}>
+         <Route path="/edit-listing/:listingId" element={<EditListing />} />
+        </Route>
       </Routes>
     </Router>
+          <ToastContainer>
+      position="bottom-center"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="colored"
+      transition: Slide,
+  </ToastContainer>
     </>
   );
 }

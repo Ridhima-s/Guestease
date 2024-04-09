@@ -1,0 +1,246 @@
+<html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    padding: 0px 60px;
+}
+
+#nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+}
+
+#nav li {
+
+    font-size: 20px;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0px 40px;
+}
+
+#nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.home-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+
+}
+.page2 {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#left h1 {
+    font-size: 90px;
+    line-height: 100px;
+    font-weight: 500;
+ 
+    text-transform: uppercase;
+}
+
+#left {
+    width: 50%;
+   z-index:1;
+}
+
+#right {
+    width: 50%;
+}
+
+#right img {
+    width: 100%;
+    z-index:-4;
+    border-radius: 30px;
+}
+.circle-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: -50px;
+    object-fit: cover;
+    border: 7px solid #000;
+}
+h1 span:nth-child(1) {
+    margin-left: 40px;
+}
+
+.box{
+    width: 390px;
+    height: 300px;
+    padding: 15px;
+    margin: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 3px solid #fff;
+}
+
+.box h2{
+    margin-bottom:20px;
+    font-size: 40px;
+}
+.box p{
+    font-size: 20px;
+}
+@media screen and (max-width: 1000px) {
+ 
+#left {
+    width: 100%;
+  margin:50px 0;
+}
+  #right {
+    width: 100%;
+}
+  #left h1 {
+    font-size: 60px;
+    line-height:80px;
+}
+  
+ .circle-img{
+    width: 70px;
+    height: 70px;
+ border:3px solid #000;
+} 
+ #nav li {
+    font-size: 16px;
+   padding: 0px 20px;
+} 
+.home-container {
+flex-direction:column;
+  height:fit-content;
+
+}
+  .box{
+    width: fit-content;
+    height: fit-content;
+    margin:20px;
+
+}
+  #right img {
+    width: 100%;
+    z-index:-4;
+    border-radius: 30px;
+}
+  .box h2{
+    margin-bottom:20px;
+    font-size: 30px;
+}
+.box p{
+    font-size: 15px;
+}
+}
+    </style>
+        <h1>Canvas</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <h2>Sign Up</h2>
+    </div>
+    
+    <div class="home-container">
+        <div id="left" >
+    <h1>unlimited</h1>
+    <h1>pretendious</h1>
+    <h1>
+        <span ><img class="circle-img" src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2lybHxlbnwwfHwwfHx8Mg%3D%3D" alt=""></span>
+        <span ><img class="circle-img" src="https://images.unsplash.com/photo-1631947430066-48c30d57b943?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2lybHxlbnwwfHwwfHx8Mg%3D%3D" alt=""></span>
+        <span ><img class="circle-img" src="https://images.unsplash.com/photo-1635488640163-e5f6782cda6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGdpcmx8ZW58MHx8MHx8fDI%3D" alt=""></span>
+     
+        ideas</h1>
+        </div>
+        <div id="right">
+       </div>
+    </div>
+    </div>
+    <div class="page2">
+    <div class="box">
+    <h2>Creative Studio</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae in perferendis expedita repudiandae doloribus quaerat officia accusamus voluptatem. Alias, soluta.</p>
+    
+    </div>
+    <div class="box">
+        <h2>Creative Studio</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae in perferendis expedita repudiandae doloribus quaerat officia accusamus voluptatem. Alias, soluta.</p>
+    
+    </div>
+    <div class="box">
+        <h2>Creative Studio</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae in perferendis expedita repudiandae doloribus quaerat officia accusamus voluptatem. Alias, soluta.</p>
+    
+    </div>
+    </div>
+    <script>
+        let tl = gsap.timeline()
+let time = gsap.timeline()
+
+tl.from("#nav h1, #nav ul li,#nav h2 ", {
+    y:-100,
+    delay:1,
+    opacity:0,
+    duration:1,
+    stagger:0.2
+})
+
+time.from("#left h1", {
+    x:-100,
+    delay:1,
+    opacity:0,
+    duration:1,
+    stagger:0.3
+})
+time.from("#right img", {
+    scale:0,
+    opacity:0,
+    duration:1,
+    stagger:0.1
+})
+
+gsap.from(".page2 .box", {
+    y:-100,
+    opacity:0,
+    duration:1,
+    stagger:0.4,
+    scrollTrigger:".page2 .box"
+
+})
+    </script>
+    
